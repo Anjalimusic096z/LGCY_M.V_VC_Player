@@ -139,10 +139,10 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton("⏭️", "skip"),
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton("𝙅𝙤𝙞𝙣 𝙂𝙧𝙤𝙪𝙥", url=f"https://t.me/LGCY_OFFICIAL"),
-                      InlineKeyboardButton("𝘿𝙀𝙑𝙇𝙊𝙋𝙀𝙍", url=f"https://t.me/lgcyalex"),
+                      InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url=f"https://t.me/pRoFeSsOR_pp"),
+                      InlineKeyboardButton("𝘿𝙀𝙑𝙇𝙊𝙋𝙀𝙍", url=f"https://t.me/pRoFeSsOR_pp"),
                   ],[
-                      InlineKeyboardButton("🗑Close", callback_data="cls")],
+                      InlineKeyboardButton("💘Close", callback_data="cls")],
                   ]
              )
     if m.sender_chat:
@@ -203,7 +203,7 @@ async def play(c: Client, m: Message):
                 )
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("**ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀᴜᴅɪᴏ.....**")
+            suhu = await replied.reply("**ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᵐᵘˢⁱᶜ.....**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -221,7 +221,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **𝗧𝗿𝗮𝗰𝗸 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝗾𝘂𝗲𝘂𝗲 »** `{pos}`\n\n🏷 **Name:** [{songname}]({link}) | `music`\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {m.from_user.mention()}",
+                    caption=f"💡 **𝗧𝗿𝗮𝗰𝗸 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 ᑫᑌᗴᑕᗴ »** `{pos}`\n\n🏷 **Name:** [{songname}]({link}) | `music`\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
             else:
@@ -254,17 +254,17 @@ async def play(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝙅𝙤𝙞𝙣 𝙂𝙧𝙤𝙪𝙥", url=f"https://t.me/LGCY_OFFICIAL")
+                            InlineKeyboardButton("𝙅𝙤𝙞𝙣 𝙂𝙧𝙤𝙪𝙥", url=f"https://t.me/music_botsupp")
                         ],
                         [
-                            InlineKeyboardButton("🗑 Close", callback_data="cls")
+                            InlineKeyboardButton("😘ᑕᒪOՏᗴ", callback_data="cls")
                         ]
                     ]
                 )
             )
         else:
             suhu = await m.reply_text(
-        f"**Downloading**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**Downloading**\n\n0% 🔊 ᵖʳᵒᶜᵉˢˢⁱⁿᵍ 100%"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
@@ -299,7 +299,7 @@ async def play(c: Client, m: Message):
                     else:
                         try:
                             await suhu.edit(
-                            f"**𝙇𝙂𝙘𝙔・𝘼𝙇𝙀𝙓 Downloader**\n\n**Title**: {title[:22]}\n\n████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**"
+                            f"**Alex°𝓀𝒶𝓀𝒶𝓈𝒽𝒾 Downloader**\n\n**Title**: {title[:22]}\n\n████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**"
                         )
                             await call_py.join_group_call(
                                 chat_id,
@@ -313,7 +313,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=image,
-                                caption=f"🏷 **Name:** [{songname[:22]}]({url})\n**⏱ Duration:** `{duration}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                caption=f"🏷 **Name:** [{songname[:22]}]({url})\n**⌚ Duration:** `{duration}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
